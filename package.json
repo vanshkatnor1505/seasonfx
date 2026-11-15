@@ -1,0 +1,29 @@
+
+{
+  "name": "seasonfx",
+  "version": "0.1.0",
+  "description": "Beautiful seasonal particle backgrounds for React",
+  "type": "module",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/seasonfx.cjs",
+  "module": "./dist/seasonfx.js",
+  "exports": {
+    ".": {
+      "import": "./dist/seasonfx.js",
+      "require": "./dist/seasonfx.cjs"
+    },
+    "./style.css": "./dist/seasonfx.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  }
+}
